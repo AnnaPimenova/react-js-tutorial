@@ -26,10 +26,10 @@ describe("mathOperators test cases", () => {
   });
 
   it("exp 4 ^ 2 to equal 16", () => {
-    expect(exp(4, 2)).toBe(16)
+    expect(exp(4, 2)).toBe(16);
   });
 
   it("exp 2 ^ 5 to equal 32", () => {
-    expect(exp(2, 5)).toBe(32)
+    expect(exp(2, 5)).toBe(32);
   });
 });

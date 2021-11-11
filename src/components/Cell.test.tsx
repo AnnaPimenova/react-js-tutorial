@@ -4,8 +4,8 @@ import userEvent from "@testing-library/user-event";
 
 import { Cell } from "./Cell";
 
-describe('Cell', () => {
-  test('click Cell', () => {
+describe("Cell", () => {
+  test("click Cell", () => {
     const someNumber = 7;
     const { container } = render(
       <Cell isFilled={true} children={someNumber} />

@@ -1,4 +1,9 @@
-import { secondPrioritiesCalc, thirdPrioritiesCalc, fourthPrioritiesCalc, firstPrioritiesCalc } from "./engine";
+import {
+  secondPrioritiesCalc,
+  thirdPrioritiesCalc,
+  fourthPrioritiesCalc,
+  firstPrioritiesCalc,
+} from "./engine";
 
 describe("firstPrioritiesCalc simple cases", () => {
   it("[5!]", () => {
@@ -7,7 +12,7 @@ describe("firstPrioritiesCalc simple cases", () => {
   it("[3! * 6]", () => {
     expect(firstPrioritiesCalc([3, "!", "*", 6])).toEqual([6, "*", 6]);
   });
-})
+});
 
 describe("secondPrioritiesCalc simple cases", () => {
   it("[7 ^ 2]", () => {
@@ -21,7 +26,7 @@ describe("secondPrioritiesCalc simple cases", () => {
   it("[7 ^ 2 * 7]", () => {
     expect(secondPrioritiesCalc([7, "^", 2, "*", 7])).toEqual([49, "*", 7]);
   });
-})
+});
 
 describe("thirdPrioritiesCalc simple cases", () => {
   it("[1, * 32]", () => {
@@ -39,9 +44,15 @@ describe("thirdPrioritiesCalc simple cases", () => {
 
 describe("secondPrioritiesCalc mixed with third and fourth priorities cases", () => {
   it("[7 + 5 * 2 ^ 3]", () => {
-    expect(secondPrioritiesCalc([7, "+", 5, "*", 2, "^", 3])).toEqual([7, "+", 5, "*", 8])
-  });  
-})
+    expect(secondPrioritiesCalc([7, "+", 5, "*", 2, "^", 3])).toEqual([
+      7,
+      "+",
+      5,
+      "*",
+      8,
+    ]);
+  });
+});
 
 describe("thirdPrioritiesCalc mixed with fourth priorities cases", () => {
   it("[32, /, 32, +, 10, *, 10]", () => {

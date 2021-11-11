@@ -40,7 +40,7 @@ describe("Runner long cases", () => {
 
 describe("Runner breackets cases", () => {
   it("5 * (3 + 7)", () => {
-     expect(runner("5 * (3 + 7)")).toEqual(50);
+    expect(runner("5 * (3 + 7)")).toEqual(50);
   });
 
   it("2 ^ (3 + 2)", () => {
@@ -50,4 +50,4 @@ describe("Runner breackets cases", () => {
   it("3 * (5 + 2 * 10) - 6 ", () => {
     expect(runner("3 * (5 + 2 * 10) - 6")).toEqual(69);
   });
-})
+});

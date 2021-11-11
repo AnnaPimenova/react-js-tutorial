@@ -12,7 +12,7 @@
     "loki:approve": "npx loki approve",
     "test:loki": "npm run build-storybook && npx loki --requireReference --reactUri file:./storybook-static",
     "test": "npx jest",
-    "check": "npm test && npm run lint",
+    "check": "npm test",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },

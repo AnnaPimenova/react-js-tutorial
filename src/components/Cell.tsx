@@ -8,7 +8,7 @@ export interface CellProps {
 
 const CellItem = styled.span`
   background-color: ${(props: CellProps) =>
-    props.isFilled ? 'darkgray' : 'white'};
+    props.isFilled ? "darkgray" : "white"};
   width: 50px;
   height: 50px;
   display: inline-block;
@@ -30,5 +30,5 @@ export const Cell: FC<CellProps> = ({ isFilled, children }) => {
     >
       {showingNum ? children : ""}
     </CellItem>
-  );  
+  );
 };

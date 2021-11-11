@@ -8,14 +8,14 @@ export default {
   decorators: [withKnobs],
 };
 
-export const Cell_alive: React.FC<{}> = () => {
+export const CellAlive: React.FC<{}> = () => {
   const count = number("Number", 0);
 
   return <Cell isFilled={true} children={count} />;
 };
 
-export const Cell_died: React.FC<{}> = () => {
-    const count = number("Number", 0);
-  
-    return <Cell isFilled={false} children={count} />;
+export const CellDied: React.FC<{}> = () => {
+  const count = number("Number", 0);
+
+  return <Cell isFilled={false} children={count} />;
 };

@@ -17,5 +17,5 @@ describe("Field", () => {
       />
     );
     expect(screen.getAllByTestId("cell").length).toBe(4);
-  });  
+  });
 });

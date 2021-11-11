@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import styled from "@emotion/styled";
 
-import { Cell } from "./Cell"
+import { Cell } from "./Cell";
 
 export interface FieldProps {
   cellsArray: Array<Array<1 | 0>>;
@@ -13,7 +13,7 @@ const RowStyled = styled.div`
 
 export const Field: FC<FieldProps> = ({ cellsArray }) => {
   let cellNum = 0;
-  return(
+  return (
     <div>
       {cellsArray?.map((row, iRow) => (
         <RowStyled key={iRow}>
@@ -30,4 +30,4 @@ export const Field: FC<FieldProps> = ({ cellsArray }) => {
       ))}
     </div>
   );
-}; 
+};

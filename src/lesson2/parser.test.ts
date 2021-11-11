@@ -15,7 +15,7 @@ describe("Parser correct cases", () => {
 
   it("7 ^ 2 - 15 * 3", () => {
     expect(parser("7 ^ 2 - 15 * 3")).toEqual([7, "^", 2, "-", 15, "*", 3]);
-  })
+  });
 });
 
 describe("Parser invalid cases", () => {

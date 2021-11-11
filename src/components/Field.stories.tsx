@@ -17,7 +17,7 @@ export const FieldEmpty2X2: React.FC<{}> = () => {
       ])}
     />
   );
-}
+};
 
 export const FieldFullFilled2X2: React.FC<{}> = () => {
   return (
@@ -27,7 +27,7 @@ export const FieldFullFilled2X2: React.FC<{}> = () => {
         [1, 1],
       ]}
     />
-  );  
+  );
 };
 
 export const Field2X2: React.FC<{}> = () => {
@@ -38,16 +38,16 @@ export const Field2X2: React.FC<{}> = () => {
         [0, 1],
       ]}
     />
-  );  
+  );
 };
 
 export const Field3X3: React.FC<{}> = () => {
   return (
-    <Field 
+    <Field
       cellsArray={[
         [1, 0, 0],
         [0, 1, 0],
-        [0, 1, 0]
+        [0, 1, 0],
       ]}
     />
   );
@@ -60,10 +60,8 @@ export const Field4X4: React.FC<{}> = () => {
         [0, 1, 0, 0],
         [0, 0, 0, 1],
         [0, 0, 1, 0],
-        [1, 0, 0, 0]
-      ]} 
+        [1, 0, 0, 0],
+      ]}
     />
   );
 };
-
-
